@@ -7,16 +7,13 @@ function compareValues(sum,luckyNumber)
 {
     if(sum%luckyNumber==0)
     {
-        outputText.innerText=("Your birthday is lucky");
+        outputText.innerText="Your birthday is lucky";
     }
     else{
-        outputText.innerText=("Your birthday is not so lucky");
+        outputText.innerText="Your birthday is not so lucky";
     }
 }
   
-
-
-
 function calculateSum(dob){
     dob=dob.replaceAll("-","");
     let sum=0;
@@ -28,11 +25,18 @@ function calculateSum(dob){
   }  
 
 
-function checkBirthdateIsLucky()
+  function checkBirthdateIsLucky()
 {
  const dob=birthDate.value;
  const sum=calculateSum(dob);
+ if(sum&&dob)
+ {
  compareValues(sum,luckyNumber.value);
+ }
+ else
+ {
+ outputText.innerText="Please input both the Numbers";
+ }
 
 }
 
