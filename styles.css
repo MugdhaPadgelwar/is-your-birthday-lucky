@@ -1,11 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Ibarra+Real+Nova&family=PT+Sans+Caption&display=swap');
+
 body
 {
     margin:auto;
+    background-color: var(--primary-dark);
+    font-family: 'Dosis', sans-serif;
+font-family: 'Ibarra Real Nova', serif;
+font-family: 'PT Sans Caption', sans-serif;
+    
+}
+:root{
+    --primary-dark:#10b981;
+    --secondary-light:#bbf7d0;
+    --secondary-green:#14532d;
 }
 
 h1{
     text-align: center;
+    margin-top: 3rem;
+    color: var(--secondary-green);
 }
 .container{
+   
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+    background-color: var(--secondary-light);
+    border-radius: 2rem;
+   
+   
+}
+label{
+    display: block;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-weight:bold;
+    color: var(--secondary-green);
+    font-size: 1.5rem;
+}
+
+
+#date-input{
+    margin-bottom: 1rem;
+    width: 15%;
+    height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+   
+}
+button{
+    display: block;
+    background-color: var(--secondary-green);
+    margin: auto;
+    width: 20%;
+    height: 4vh;
+    border-radius: 0.5rem;
+    color: #bbf7d0;
+    border-color: #bbf7d0;
+    cursor: pointer;
+}
+
+#lucky-number{
+    margin-bottom: 1.5rem;
+    width: 15%;
+    height: 2rem;
+    text-align: center;
+    font-size: 1rem;
     
 }
+
+#output-text{
+    margin-top: 1rem;
+    color: var(--secondary-green);
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
