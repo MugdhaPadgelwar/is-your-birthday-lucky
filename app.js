@@ -23,8 +23,13 @@ function calculateSum(dob) {
 function checkBirthdateIsLucky() {
   const dob = birthDate.value;
   const sum = calculateSum(dob);
-  if (sum && dob) {
-    compareValues(sum, luckyNumber.value);
+
+  if (sum && dob && luckyNumber.value) {
+    if (luckyNumber.value < 0) {
+      outputText.innerText = "Lucky number should be greater than 0";
+    } else {
+      compareValues(sum, luckyNumber.value);
+    }
   } else {
     outputText.innerText = "Please input both the Numbers";
   }
